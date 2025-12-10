@@ -13,14 +13,13 @@
 
     <style>
         :root {
-            /* Theme Colors (HSL values for easy manipulation) */
             --bg-color: #09090b;
             --card-bg: #121215;
             --text-main: #fcfcfc;
             --text-muted: #a1a1aa;
             
-            --primary: #26d76d; /* Neon Green */
-            --secondary: #0dcaf0; /* Cyan */
+            --primary: #26d76d; 
+            --secondary: #0dcaf0;
             
             --font-sans: 'Space Grotesk', sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
@@ -40,7 +39,6 @@
             overflow-x: hidden;
         }
 
-        /* Utility Classes */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -54,7 +52,6 @@
         
         a { text-decoration: none; color: inherit; }
 
-        /* Background Effects */
         .bg-overlay {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -185,7 +182,7 @@
             gap: 15px;
         }
 
-        /* Skills Grid */
+        /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -224,7 +221,7 @@
             color: var(--text-muted);
         }
 
-        /* Project Grid */
+        /* Projects */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -242,7 +239,7 @@
         }
 
         .project-card:hover {
-            border-color: rgba(13, 202, 240, 0.5); /* secondary/50 */
+            border-color: rgba(13, 202, 240, 0.5);
         }
         
         .project-card:hover h3 {
@@ -262,10 +259,6 @@
         /* .project-icon-box {
             padding: 8px;
             background: rgba(21, 123, 143, 0.1);
-            border-radius: 4px;
-            color: var(--secondary);
-            display: inline-block;
-            margin-bottom: 20px;
         } */
 
         .project-icon-box svg{
@@ -320,8 +313,8 @@
         }
 
         .cert-icon {
-            background: rgba(234, 179, 8, 0.2); /* yellow-500/20 */
-            color: #eab308; /* yellow-500 */
+            background: rgba(234, 179, 8, 0.2); 
+            color: #eab308;
             padding: 8px;
             border-radius: 4px;
             display: flex;
@@ -329,7 +322,6 @@
             justify-content: center;
         }
 
-        /* Animations */
         @keyframes blink { 50% { opacity: 0; } }
         @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
 
@@ -343,7 +335,6 @@
             transform: none;
         }
 
-        /* SVG Icons (Inline for single file portability) */
         svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
         
         .contact-grid {
@@ -365,7 +356,6 @@
             background: rgba(38, 215, 109, 0.05);
         }
 
-        /* Tool Badges */
         .tool-badge {
             font-family: var(--font-mono);
             font-size: 0.85rem;
@@ -560,7 +550,7 @@
         </div>
     </section>
 
-    <!-- Tools & Arsenal Section -->
+    <!-- Tools Section -->
     <section>
         <div class="container fade-in-section">
             <h2 class="section-title mono"><span class="text-primary">&gt;</span> TOOLS & ARSENAL</h2>
@@ -671,7 +661,7 @@
         </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Edu -->
     <section>
         <div class="container fade-in-section">
             <h2 class="section-title mono"><span class="text-secondary">./</span> EDUCATION & TRAINING</h2>
@@ -754,7 +744,6 @@
     </section>
 
     <script>
-        // Typing Effect
         const text = "Establishing Secure Session...\nLoading Profile: Vishnu Satheesh\nRole: Cybersecurity Analyst | Blue Team\nStatus: Online_";
         const output = document.getElementById('typing-output');
         let i = 0;
@@ -767,7 +756,6 @@
             }
         }
 
-        // Scroll Animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -780,7 +768,6 @@
             observer.observe(el);
         });
 
-        // Start typing on load
         window.onload = typeWriter;
     </script>
 </body>
