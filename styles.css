@@ -354,11 +354,19 @@ svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width:
     cursor: default;
 }
 .tool-badge:hover {
-    background: rgba(38, 215, 109, 0.15);
+    background: rgba(38, 215, 109, 0.185);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(38, 215, 109, 0.1);
+    box-shadow: 0 4px 12px rgba(73, 187, 130, 0.10);
 }
-
+.tool-extra {
+    background: #ad8af211;
+    border-color: #ad8af233;
+    color: #ad8af2;
+}
+.tool-extra:hover{
+    background: #ad8af21a;
+    box-shadow: 0 4px 12px #ad8af21a;
+}
 .tool-secondary {
     background: rgba(13, 202, 240, 0.05);
     border-color: rgba(13, 202, 240, 0.2);
@@ -422,6 +430,7 @@ svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width:
     .hero-actions svg{
     scale: 1.5;
     }
+
     body, html {
         overflow-x: hidden !important;
     }
