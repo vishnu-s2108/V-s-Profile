@@ -419,7 +419,9 @@ svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width:
         width: auto !important;
         display: inline-block !important;
     }
-
+    .hero-actions svg{
+    scale: 1.5;
+    }
     body, html {
         overflow-x: hidden !important;
     }
