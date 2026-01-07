@@ -50,8 +50,8 @@ a { text-decoration: none; color: inherit; }
     opacity: 0.4;
 }
 
-/* Hero / Terminal Section */
-.hero {
+/* main / Terminal Section */
+.main {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -117,7 +117,7 @@ a { text-decoration: none; color: inherit; }
     vertical-align: middle;
 }
 
-.hero-actions {
+.main-actions {
     margin-top: 40px;
     border-top: 1px solid rgba(38, 215, 109, 0.2);
     padding-top: 20px;
@@ -420,14 +420,14 @@ svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width:
     .typing-text {
         font-size: 0.95rem;
     }
-    .hero-actions a.btn {
+    .main-actions a.btn {
         font-size: 0.70rem !important;
         padding: 6px 12px !important;
         letter-spacing: 0.8px;
         width: auto !important;
         display: inline-block !important;
     }
-    .hero-actions svg{
+    .main-actions svg{
     scale: 1.5;
     }
 
